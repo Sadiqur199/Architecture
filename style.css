@@ -30,6 +30,9 @@ li{
   padding-left: 30px;
   margin-top: 45px;
 }
+hr{
+  display: none;
+}
 /* banner design */
 .container{
   text-align: center;
@@ -151,17 +154,30 @@ h4{
 
 /* media query mobaile design */
 @media screen and (max-width:576px) {
-  header{
-    overflow-x: hidden;
+  *{
+    margin: 0px;
+    padding: 0px;
+
   }
   .nav-grid{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    background-color:blanchedalmond;
+     display:flex;
+     flex-direction: column;
   }
+  .header-name{
+    text-align: start;
+
+  }
+  ul{
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  hr{
+    display: block;
+  }
+  
   .bannaer-style{
     width: 100%;
-    height: 500px;
+    height: auto;
     margin-bottom: 10px;
   }
   .banner-head{
@@ -180,6 +196,10 @@ h4{
     margin-right: 50px;
   }
   /* feature design */
+  .feature-section{
+    display: block;
+    margin-bottom: 50px;
+ }
   .feature-image{
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -188,10 +208,10 @@ h4{
   }
   .feature-titel{
     text-align: start;
-    Width:100%;
-    Height:304px;
+    Width:50%;
+    Height:auto;
     margin-left: 20px;
-    margin-top: 180px;
+    margin-top: 50px;
   }
   .submit-btn{
     width: 90px;
