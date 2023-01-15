@@ -250,7 +250,7 @@ width: 25px;
 /* media query mobaile design */
 @media only screen and (max-width:576px) {
   
-  body{
+  body ,html{
     overflow-x: hidden;
   }
   .nav-grid{
